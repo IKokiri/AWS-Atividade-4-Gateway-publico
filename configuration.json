@@ -1,16 +1,16 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/",
+      "DownstreamPathTemplate": "/pedido/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 7000
+          "Port": 3000
         }
       ],
       "UpstreamPathTemplate": "/pedido/",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+      "UpstreamHttpMethod": [ "Get"]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
@@ -18,11 +18,11 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 7000
+          "Port": 3000
         }
       ],
       "UpstreamPathTemplate": "/pedido/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+      "UpstreamHttpMethod": [ "Get"]
     },
     {
       "DownstreamPathTemplate": "/product/",
@@ -34,10 +34,10 @@
         }
       ],
       "UpstreamPathTemplate": "/product/",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+      "UpstreamHttpMethod": [ "Get"]
     },
     {
-      "DownstreamPathTemplate": "/basket/",
+      "DownstreamPathTemplate": "/carrainho/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -45,8 +45,8 @@
           "Port": 3000
         }
       ],
-      "UpstreamPathTemplate": "/basket/",
-      "UpstreamHttpMethod": ["Post", "Put", "Delete", "Options" ]
+      "UpstreamPathTemplate": "/carrainho/",
+      "UpstreamHttpMethod": ["Get"]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
@@ -58,7 +58,7 @@
         }
       ],
       "UpstreamPathTemplate": "/product/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+      "UpstreamHttpMethod": [ "Get"]
     }
   ],
   "GlobalConfiguration": { }
