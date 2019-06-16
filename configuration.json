@@ -29,8 +29,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.223.240.3",
-          "Port": 3000
+          "Host": "127.0.0.1",
+          "Port": 3002
         }
       ],
       "UpstreamPathTemplate": "/product/",
@@ -41,7 +41,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "10.223.240.3",
+          "Host": "127.0.0.1",
           "Port": 3000
         }
       ],
