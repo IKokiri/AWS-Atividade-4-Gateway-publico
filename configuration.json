@@ -37,16 +37,28 @@
       "UpstreamHttpMethod": [ "Get"]
     },
     {
-      "DownstreamPathTemplate": "/carrainho/",
+      "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 3000
+          "Port": 3002
         }
       ],
-      "UpstreamPathTemplate": "/carrainho/",
-      "UpstreamHttpMethod": ["Get"]
+      "UpstreamPathTemplate": "/product/{everything}",
+      "UpstreamHttpMethod": [ "Get"]
+    },
+    {
+      "DownstreamPathTemplate": "/carrinho/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "127.0.0.1",
+          "Port": 3003
+        }
+      ],
+      "UpstreamPathTemplate": "/carrinho/",
+      "UpstreamHttpMethod": [ "Get"]
     },
     {
       "DownstreamPathTemplate": "/{everything}",
@@ -54,12 +66,15 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "127.0.0.1",
-          "Port": 8000
+          "Port": 3003
         }
       ],
-      "UpstreamPathTemplate": "/product/{everything}",
+      "UpstreamPathTemplate": "/carrinho/{everything}",
       "UpstreamHttpMethod": [ "Get"]
     }
+
+    
+    
   ],
   "GlobalConfiguration": { }
 }
