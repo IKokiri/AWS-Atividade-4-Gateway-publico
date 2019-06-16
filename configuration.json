@@ -72,6 +72,9 @@
       "UpstreamPathTemplate": "/carrinho/{everything}",
       "UpstreamHttpMethod": [ "Get"]
     }
+
+    
+    
   ],
   "GlobalConfiguration": { }
 }
