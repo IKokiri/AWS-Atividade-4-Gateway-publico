@@ -25,7 +25,7 @@
       "UpstreamHttpMethod": [ "Get"]
     },
     {
-      "DownstreamPathTemplate": "/product/",
+      "DownstreamPathTemplate": "/produto/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -33,7 +33,7 @@
           "Port": 3002
         }
       ],
-      "UpstreamPathTemplate": "/product/",
+      "UpstreamPathTemplate": "/produto/",
       "UpstreamHttpMethod": [ "Get"]
     },
     {
@@ -45,7 +45,7 @@
           "Port": 3002
         }
       ],
-      "UpstreamPathTemplate": "/product/{everything}",
+      "UpstreamPathTemplate": "/produto/{everything}",
       "UpstreamHttpMethod": [ "Get"]
     },
     {
@@ -72,9 +72,6 @@
       "UpstreamPathTemplate": "/carrinho/{everything}",
       "UpstreamHttpMethod": [ "Get"]
     }
-
-    
-    
   ],
   "GlobalConfiguration": { }
 }
